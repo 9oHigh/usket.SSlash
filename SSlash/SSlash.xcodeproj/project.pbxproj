@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		4C3DD3E52C4FD2BD005601BF /* SSlashApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3DD3E42C4FD2BD005601BF /* SSlashApp.swift */; };
 		4C3DD3E72C4FD2BD005601BF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3DD3E62C4FD2BD005601BF /* ContentView.swift */; };
-		4C3DD3E92C4FD2BE005601BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C3DD3E82C4FD2BE005601BF /* Assets.xcassets */; };
+		4C3DD3E92C4FD2BE005601BF /* ColorAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C3DD3E82C4FD2BE005601BF /* ColorAssets.xcassets */; };
 		4C3DD3F72C4FD2BE005601BF /* SSlashTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3DD3F62C4FD2BE005601BF /* SSlashTests.swift */; };
 		4C3DD4012C4FD2BE005601BF /* SSlashUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3DD4002C4FD2BE005601BF /* SSlashUITests.swift */; };
 		4C3DD4032C4FD2BE005601BF /* SSlashUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3DD4022C4FD2BE005601BF /* SSlashUITestsLaunchTests.swift */; };
@@ -17,6 +17,12 @@
 		4C3DD4142C4FE003005601BF /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 4C3DD4132C4FE003005601BF /* Realm */; };
 		4C3DD4162C4FE003005601BF /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 4C3DD4152C4FE003005601BF /* RealmSwift */; };
 		4C3DD4192C4FE030005601BF /* PopupView in Frameworks */ = {isa = PBXBuildFile; productRef = 4C3DD4182C4FE030005601BF /* PopupView */; };
+		4C850D0C2C608E0E0084416F /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C850D0B2C608E0E0084416F /* AppColor.swift */; };
+		4C850D0F2C60908B0084416F /* AppRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C850D0E2C60908B0084416F /* AppRadius.swift */; };
+		4C850D112C6090A70084416F /* AppFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C850D102C6090A70084416F /* AppFont.swift */; };
+		4CCF74B22C5FC9C9008DD140 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4CCF74B12C5FC9C9008DD140 /* GoogleService-Info.plist */; };
+		4CCF74B52C5FCA3E008DD140 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 4CCF74B42C5FCA3E008DD140 /* FirebaseAnalytics */; };
+		4CCF74B72C5FCA3E008DD140 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 4CCF74B62C5FCA3E008DD140 /* FirebaseCrashlytics */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,13 +46,17 @@
 		4C3DD3E12C4FD2BD005601BF /* SSlash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SSlash.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C3DD3E42C4FD2BD005601BF /* SSlashApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSlashApp.swift; sourceTree = "<group>"; };
 		4C3DD3E62C4FD2BD005601BF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		4C3DD3E82C4FD2BE005601BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4C3DD3E82C4FD2BE005601BF /* ColorAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ColorAssets.xcassets; sourceTree = "<group>"; };
 		4C3DD3EA2C4FD2BE005601BF /* SSlash.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SSlash.entitlements; sourceTree = "<group>"; };
 		4C3DD3F22C4FD2BE005601BF /* SSlashTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SSlashTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C3DD3F62C4FD2BE005601BF /* SSlashTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSlashTests.swift; sourceTree = "<group>"; };
 		4C3DD3FC2C4FD2BE005601BF /* SSlashUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SSlashUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C3DD4002C4FD2BE005601BF /* SSlashUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSlashUITests.swift; sourceTree = "<group>"; };
 		4C3DD4022C4FD2BE005601BF /* SSlashUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSlashUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4C850D0B2C608E0E0084416F /* AppColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
+		4C850D0E2C60908B0084416F /* AppRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRadius.swift; sourceTree = "<group>"; };
+		4C850D102C6090A70084416F /* AppFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFont.swift; sourceTree = "<group>"; };
+		4CCF74B12C5FC9C9008DD140 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +67,8 @@
 				4C3DD4192C4FE030005601BF /* PopupView in Frameworks */,
 				4C3DD4162C4FE003005601BF /* RealmSwift in Frameworks */,
 				4C3DD4142C4FE003005601BF /* Realm in Frameworks */,
+				4CCF74B72C5FCA3E008DD140 /* FirebaseCrashlytics in Frameworks */,
+				4CCF74B52C5FCA3E008DD140 /* FirebaseAnalytics in Frameworks */,
 				4C3DD4112C4FDFC5005601BF /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -101,11 +113,13 @@
 		4C3DD3E32C4FD2BD005601BF /* SSlash */ = {
 			isa = PBXGroup;
 			children = (
+				4CCF74B12C5FC9C9008DD140 /* GoogleService-Info.plist */,
 				4C3DD3EA2C4FD2BE005601BF /* SSlash.entitlements */,
 				4C3DD41A2C552D11005601BF /* App */,
 				4C3DD41B2C552D1E005601BF /* Feature */,
 				4C3DD41F2C5531FF005601BF /* Component */,
 				4C3DD4202C55320A005601BF /* Helpers */,
+				4C850D0A2C5FE6570084416F /* Preview Content */,
 			);
 			path = SSlash;
 			sourceTree = "<group>";
@@ -148,7 +162,7 @@
 		4C3DD41C2C552D2C005601BF /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				4C3DD3E82C4FD2BE005601BF /* Assets.xcassets */,
+				4C3DD3E82C4FD2BE005601BF /* ColorAssets.xcassets */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -191,9 +205,19 @@
 			path = Utilities;
 			sourceTree = "<group>";
 		};
+		4C850D0A2C5FE6570084416F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
 		4CCF74962C576B90008DD140 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				4C850D0B2C608E0E0084416F /* AppColor.swift */,
+				4C850D0E2C60908B0084416F /* AppRadius.swift */,
+				4C850D102C6090A70084416F /* AppFont.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -227,6 +251,8 @@
 				4C3DD4132C4FE003005601BF /* Realm */,
 				4C3DD4152C4FE003005601BF /* RealmSwift */,
 				4C3DD4182C4FE030005601BF /* PopupView */,
+				4CCF74B42C5FCA3E008DD140 /* FirebaseAnalytics */,
+				4CCF74B62C5FCA3E008DD140 /* FirebaseCrashlytics */,
 			);
 			productName = SSlash;
 			productReference = 4C3DD3E12C4FD2BD005601BF /* SSlash.app */;
@@ -304,6 +330,7 @@
 				4C3DD40F2C4FDFC5005601BF /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
 				4C3DD4122C4FE003005601BF /* XCRemoteSwiftPackageReference "realm-swift" */,
 				4C3DD4172C4FE030005601BF /* XCRemoteSwiftPackageReference "PopupView" */,
+				4CCF74B32C5FCA3E008DD140 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = 4C3DD3E22C4FD2BD005601BF /* Products */;
 			projectDirPath = "";
@@ -321,7 +348,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C3DD3E92C4FD2BE005601BF /* Assets.xcassets in Resources */,
+				4C3DD3E92C4FD2BE005601BF /* ColorAssets.xcassets in Resources */,
+				4CCF74B22C5FC9C9008DD140 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,7 +375,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C3DD3E72C4FD2BD005601BF /* ContentView.swift in Sources */,
+				4C850D112C6090A70084416F /* AppFont.swift in Sources */,
 				4C3DD3E52C4FD2BD005601BF /* SSlashApp.swift in Sources */,
+				4C850D0C2C608E0E0084416F /* AppColor.swift in Sources */,
+				4C850D0F2C60908B0084416F /* AppRadius.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -727,7 +758,7 @@
 			repositoryURL = "https://github.com/realm/realm-swift";
 			requirement = {
 				kind = exactVersion;
-				version = 10.52.0;
+				version = 10.33.0;
 			};
 		};
 		4C3DD4172C4FE030005601BF /* XCRemoteSwiftPackageReference "PopupView" */ = {
@@ -736,6 +767,14 @@
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 3.0.4;
+			};
+		};
+		4CCF74B32C5FCA3E008DD140 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -760,6 +799,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 4C3DD4172C4FE030005601BF /* XCRemoteSwiftPackageReference "PopupView" */;
 			productName = PopupView;
+		};
+		4CCF74B42C5FCA3E008DD140 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4CCF74B32C5FCA3E008DD140 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		4CCF74B62C5FCA3E008DD140 /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4CCF74B32C5FCA3E008DD140 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

@@ -93,3 +93,6 @@ iOSInjectionProject/
 # Info.plist
 GoogleService-Info.plist
 Info.plist
+
+# Admob
+AdmobConfiguration.xcconfig

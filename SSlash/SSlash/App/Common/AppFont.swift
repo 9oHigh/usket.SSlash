@@ -13,7 +13,7 @@ enum FontSize: CGFloat {
     case small = 12
 }
 
-//MARK: - 앱 전반에 사용할 기본 폰트 추가 ( Regular, Bold )
+//MARK: - Add default fonts ( Regular, Bold )
 
 enum AppFont {
     

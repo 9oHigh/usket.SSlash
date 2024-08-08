@@ -6,16 +6,6 @@
 //
 
 import SwiftUI
-import FirebaseCore
-
-class AppDelegate: NSObject, UIApplicationDelegate {
-    
-  func application(_ application: UIApplication,
-                   didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
-    FirebaseApp.configure()
-    return true
-  }
-}
 
 @main
 struct SSlashApp: App {
@@ -28,7 +18,21 @@ struct SSlashApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ZStack {
+                NavigationStack {
+                    HomeScreen(store: .init(initialState: HomeCore.State(), reducer: {
+                        HomeCore()
+                    }))
+                }
+                
+                VStack {
+                    Spacer()
+                    // MARK: - Need height values in proportion
+                    AdBannerManager.shared.adBannerView
+                            .frame(width: UIScreen.main.bounds.width, height: 50)
+                }
+            }
+            .ignoresSafeArea(edges: .bottom)
         }
     }
 }

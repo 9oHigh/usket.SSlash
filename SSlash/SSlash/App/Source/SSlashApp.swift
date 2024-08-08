@@ -41,7 +41,7 @@ extension SSlashApp {
     
     private func setNavigationBarAppearance() {
         let appearance = UINavigationBarAppearance()
-        appearance.backgroundColor = UIColor(AppColor.nomalBackground.color)
+        appearance.backgroundColor = UIColor(AppColor.normalBackground.color)
         appearance.shadowColor = .clear
         UINavigationBar.appearance().standardAppearance = appearance
         UINavigationBar.appearance().scrollEdgeAppearance = appearance

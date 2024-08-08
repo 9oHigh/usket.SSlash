@@ -8,9 +8,9 @@
 import SwiftUI
 
 enum AppColor: String {
-    case text = "nomal_text"
+    case text = "normal_text"
     case buttonText = "button_text"
-    case nomalBackground = "nomal_background"
+    case normalBackground = "normal_background"
     case buttonBackground = "button_background"
     
     var color: Color {
